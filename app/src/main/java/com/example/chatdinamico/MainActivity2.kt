@@ -18,3 +18,4 @@ class MainActivity2 : AppCompatActivity() {
             Toast.makeText(this, "tela 2", Toast.LENGTH_LONG).show()
     }
 }
+}
