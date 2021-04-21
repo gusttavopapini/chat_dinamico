@@ -17,7 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity2"
-            android:label="Tela 2"
             android:parentActivityName=".MainActivity"/>
     </application>
 
