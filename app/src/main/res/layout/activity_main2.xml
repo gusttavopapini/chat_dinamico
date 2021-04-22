@@ -10,11 +10,14 @@
         android:id="@+id/edit_text2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/send_button2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Digite Aqui..."
+        android:textColorHint="#bbb"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
 
     <Button
         android:id="@+id/send_button2"
@@ -30,7 +33,7 @@
         android:id="@+id/mensagem_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Exemplo"
+        tools:text="exemplo"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
