@@ -29,19 +29,21 @@
     <TextView
         android:id="@+id/mensagem_text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sua Mensagem"
+        android:layout_height="0dp"
+        android:text="exemplo"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/edit_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/qualTelaEstou" />
+
     <Button
         android:id="@+id/qualTelaEstou"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:text="qual tela estou?"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

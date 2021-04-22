@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        //ENVIO DA MENSAGEM DA TELA 1
         send_button.setOnClickListener {
 
            var mensagemEnviada = edit_text.text.toString()
@@ -25,15 +27,19 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+
+
+        //RECEBIMENTO DA MENSAGEM DA TELA 2
+        val mensagemRecebida = intent.getStringExtra("MENSAGEM_ENVIADA")
+
+        mensagem_text.text = mensagemRecebida
+
+
+
+        //QUAL TELA ESTOU?
         qualTelaEstou.setOnClickListener {
             Toast.makeText(this, "tela 1", Toast.LENGTH_LONG).show()
         }
-
-        var intent = intent
-        val mensagemRecebidaDaTela2 = intent.getStringExtra("MENSAGEM_RECEBIDA_DA_TELA_2")
-
-        val exibirMensagemRecebidaDaTela2 = findViewById<TextView>(R.id.mensagem_text)
-        exibirMensagemRecebidaDaTela2.setText(mensagemRecebidaDaTela2)
 
         }
     }
